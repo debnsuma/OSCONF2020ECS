@@ -23,11 +23,11 @@ aws ecr create-repository --repository-name flask-app-docker
 NOTE
 =====
 
-507922848584.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker:latest
+{account ID}.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker:latest
 
 
-docker tag flask-wine-predict-app:latest 507922848584.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
+docker tag flask-wine-predict-app:latest {account ID}.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
 
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 507922848584.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin {account ID}.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
 
-docker push 507922848584.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
+docker push {account ID}.dkr.ecr.us-east-1.amazonaws.com/flask-app-docker
