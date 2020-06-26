@@ -11,6 +11,7 @@ Create a new image
 ------------------
 
 docker build -t flask-wine-predict-app .
+
 docker image ls
 
 http://127.0.0.1/
